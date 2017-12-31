@@ -12,3 +12,7 @@ V3 Wont boot if d8 high on startup- Changed to Pin 7 and this works. Levelconver
    Note: MQ2 draws too much for board to support and will need standalone Vref
 
 V4 converting to IFTTT and temporarily removed smoke detection. Disabled wificlient in setup and only activate when ifttt is called- power savings
+
+<p align="center">
+  <img src="https://github.com/MKme/WemosAlarm/blob/master/Photos/2017-12-30%2019.02.32.jpg" width="800"/>
+</p>
