@@ -17,3 +17,4 @@ V4 converting to IFTTT and temporarily removed smoke detection. Disabled wificli
 <p align="center">
   <img src="https://github.com/MKme/WemosAlarm/blob/master/Photos/2017-12-30%2019.02.32.jpg" width="800"/>
 </p>
+
