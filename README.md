@@ -2,6 +2,7 @@
 Erics Super Simple motion sensor alarm system using a Wemos D1 mini and Passive infra-red (PIR) sensor to send you notifications via IFTTT
 My Youtube Channel  : http://www.youtube.com/mkmeorg
 My website   : http://www.mkme.org
+
 If you use this code or personalize it etc- please consider sharing it back with the world Open-Source 
 Tested with Arduino IDE 1.6.7
 Connect PIR sensor V+ to 5V , V- to GND and Signal as per the sketch below.
