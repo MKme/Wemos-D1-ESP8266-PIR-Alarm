@@ -12,13 +12,15 @@ V3 Wont boot if d8 high on startup- Changed to Pin 7 and this works. Levelconver
    Note: MQ2 draws too much for board to support and will need standalone Vref
 
 V4 converting to IFTTT and temporarily removed smoke detection. Disabled wificlient in setup and only activate when ifttt is called- power savings
-Some code borrowed from: https://github.com/beamzer/Wemos-IFTTT-Button/blob/master/Wemos-IFTTT-Button/Wemos-IFTTT-Button.ino
-Another cool version: https://nobugsjustfeatures.wordpress.com/2017/12/11/pir-sensor-alarm-with-esp8266-and-ifttt-webhooks-maker/
+   Some code borrowed from: https://github.com/beamzer/Wemos-IFTTT-Button/blob/master/Wemos-IFTTT-Button/Wemos-IFTTT-Button.ino
+   Another cool version: https://nobugsjustfeatures.wordpress.com/2017/12/11/pir-sensor-alarm-with-esp8266-and-ifttt-webhooks-maker/
+   Added to Github
+1-31-2017- Added setup- WiFi.hostname("Name"); to identify the ESP8266 properly on the network- works!
 */
 
 #include <ESP8266WiFi.h>
-const char* ssid     = "xxx";      // SSID of local network
-const char* password = "xxx";   // Password on network
+const char* ssid     = "erger";      // SSID of local network
+const char* password = "1234567890";   // Password on network
 String result;
 String smoke ;
 String motion ;
@@ -29,13 +31,14 @@ void setup()
   pinMode(D7, INPUT);
   delay(2000);
   Serial.begin(115200);
+  WiFi.hostname("ESP8266MotionSensor"); //This changes the hostname of the ESP8266 to display neatly on the network esp on router.
 }
 
 void ifttt() //Wifi connection and send all the data to IFTTT
 {
   const char host[ ]        = "maker.ifttt.com";          // maker channel of IFTTT
   const char trigger[ ]     = "motion";                   //name of the trigger you would like to send to IFTTT
-  const char APIKey[ ]      = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";      //Your maker key for Webhooks on IFTTT
+  const char APIKey[ ]      = "b6Cy2urPUKGImL-IBPNpZoA9bleB08zUUWpO4FJmpY1";      //Your maker key for Webhooks on IFTTT
   Serial.print("Connect to: ");
   Serial.println(host);
   // WiFiClient to make HTTP connection
@@ -51,8 +54,9 @@ void ifttt() //Wifi connection and send all the data to IFTTT
   Serial.println(url);
 
 // Send request to IFTTT
-  client.print(String("GET ") + url + " HTTP/1.1\r\n" + "Host: " + host + "\r\n" + "Connection: close\r\n\r\n");
-  delay(20);
+  client.print(String("GET ") + url + " HTTP/1.1\r\n" + "Host: " + host + "\r\n" + "Connection: close\r\n\r\n"); 
+  //FYI rn rn is just two new lines to comply with http format
+   delay(20);
 
 // Read all the lines of the reply from server and print them to Serial
   Serial.println("Respond:");
