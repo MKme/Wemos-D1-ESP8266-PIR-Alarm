@@ -19,8 +19,8 @@ V4 converting to IFTTT and temporarily removed smoke detection. Disabled wificli
 */
 
 #include <ESP8266WiFi.h>
-const char* ssid     = "erger";      // SSID of local network
-const char* password = "1234567890";   // Password on network
+const char* ssid     = "xxxx";      // SSID of local network
+const char* password = "xxxxxx";   // Password on network
 String result;
 String smoke ;
 String motion ;
@@ -38,7 +38,7 @@ void ifttt() //Wifi connection and send all the data to IFTTT
 {
   const char host[ ]        = "maker.ifttt.com";          // maker channel of IFTTT
   const char trigger[ ]     = "motion";                   //name of the trigger you would like to send to IFTTT
-  const char APIKey[ ]      = "b6Cy2urPUKGImL-IBPNpZoA9bleB08zUUWpO4FJmpY1";      //Your maker key for Webhooks on IFTTT
+  const char APIKey[ ]      = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";      //Your maker key for Webhooks on IFTTT
   Serial.print("Connect to: ");
   Serial.println(host);
   // WiFiClient to make HTTP connection
