@@ -7,6 +7,9 @@ If you use this code or personalize it etc- please consider sharing it back with
 Tested with Arduino IDE 1.6.7
 Connect PIR sensor V+ to 5V , V- to GND and Signal as per the sketch below.
 
+Buy the Wemos D1 Here: http://amzn.to/2lFkeA6
+Buy the PIR sensor here: http://amzn.to/2lFYh3J
+ 
 V1 Basic Sketch Works to send emails every 10 seconds or around there.
 V2 works smoke and motion
 V3 Wont boot if d8 high on startup- Changed to Pin 7 and this works. Levelconverter in place and tested- works perfect for 5V in
