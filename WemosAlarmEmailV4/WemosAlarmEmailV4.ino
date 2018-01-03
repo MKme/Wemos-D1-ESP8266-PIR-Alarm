@@ -68,6 +68,7 @@ void ifttt() //Wifi connection and send all the data to IFTTT
   Serial.println("closing connection");
   Serial.println(); //space things our in serial monitor for purdy
   Serial.println();
+  client.stop();  //V5 added this to disconnect
   delay (20000); //This delay here just to stop spamming of emails- should be polished to a better method/location
  }
   
