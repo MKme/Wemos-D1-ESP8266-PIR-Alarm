@@ -18,7 +18,13 @@ V3 Wont boot if d8 high on startup- Changed to Pin 7 and this works. Levelconver
 
 V4 converting to IFTTT and temporarily removed smoke detection. Disabled wificlient in setup and only activate when ifttt is called- power savings
 
+Get a 3D printable case on Thingiverse here: https://www.thingiverse.com/thing:2489968
+
 <p align="center">
   <img src="https://github.com/MKme/WemosAlarm/blob/master/Photos/2017-12-30%2019.02.32.jpg" width="800"/>
 </p>
 
+
+<p align="center">
+  <img src="https://github.com/MKme/WemosAlarm/blob/master/Photos/case.pg" width="800"/>
+</p>
