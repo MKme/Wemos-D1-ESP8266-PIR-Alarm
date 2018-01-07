@@ -26,5 +26,5 @@ Get a 3D printable case on Thingiverse here: https://www.thingiverse.com/thing:2
 
 
 <p align="center">
-  <img src="https://github.com/MKme/WemosAlarm/blob/master/Photos/case.pg" width="800"/>
+  <img src="https://github.com/MKme/WemosAlarm/blob/master/Photos/case.png" width="800"/>
 </p>
