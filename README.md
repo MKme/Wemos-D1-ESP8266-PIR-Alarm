@@ -24,7 +24,7 @@ Get a 3D printable case on Thingiverse here: https://www.thingiverse.com/thing:2
 </p>
 
 <p align="center">
-  <img src="https://github.com/MKme/Wemos-D1-ESP8266-PIR-Alarm/blob/master/Pschematic/schematic.PNG" width="800"/>
+  <img src="https://github.com/MKme/Wemos-D1-ESP8266-PIR-Alarm/blob/master/schematic/Schematic.PNG" width="800"/>
 </p>
 
 
