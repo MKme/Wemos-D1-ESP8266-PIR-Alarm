@@ -16,6 +16,9 @@ V4 converting to IFTTT and temporarily removed smoke detection. Disabled wificli
    Another cool version: https://nobugsjustfeatures.wordpress.com/2017/12/11/pir-sensor-alarm-with-esp8266-and-ifttt-webhooks-maker/
    Added to Github
 1-31-2017- Added setup- WiFi.hostname("Name"); to identify the ESP8266 properly on the network- works!
+
+Yes some variables are no longer used and should be removed. That is a future person problem- deal with it.
+Yes credentials are hard coded- I did this to expressly annoy the internutz. Life is about joy in little wins....
 */
 
 #include <ESP8266WiFi.h>
