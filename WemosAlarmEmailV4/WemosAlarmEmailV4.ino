@@ -35,6 +35,7 @@ void setup()
   delay(2000);
   Serial.begin(115200);
   WiFi.hostname("ESP8266MotionSensor"); //This changes the hostname of the ESP8266 to display neatly on the network esp on router.
+  WiFi.begin(ssid, password);
 }
 
 void ifttt() //Wifi connection and send all the data to IFTTT
