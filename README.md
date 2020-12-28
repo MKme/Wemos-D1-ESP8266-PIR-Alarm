@@ -1,10 +1,21 @@
 ﻿
 Erics Super Simple motion sensor alarm system using a Wemos D1 mini and Passive infra-red (PIR) sensor to send you notifications via IFTTT
+
 My Youtube Channel  : http://www.youtube.com/mkmeorg
+
 My website   : http://www.mkme.org
 
+Buy a components kit from my website here: https://store.mkme.org/?product=esp8266-pir-motion-detector-kit
+
+Or buy them yourself:
+
+Buy the Wemos D1 Here: http://amzn.to/2lFkeA6
+
+Buy the PIR sensor here: http://amzn.to/2lFYh3J
+ 
 If you use this code or personalize it etc- please consider sharing it back with the world Open-Source 
 Tested with Arduino IDE 1.6.7
+
 Connect PIR sensor V+ to 5V , V- to GND and Signal as per the sketch below.
 
 See the full video here: https://www.youtube.com/watch?v=y9XC5yHR5Bk
